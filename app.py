@@ -37,9 +37,9 @@ def predict():
     array=np.array(List)
     array1=np.reshape(array,(1,-1))
     #output = round(prediction[0], 2)
-    prediction=model.predict(array1)
-    print(prediction)
-    return render_template('index.html', prediction_text='LAPTOP VALUE should be : Rs. {}'.format(prediction))
+    #prediction=model.predict(array1)
+    
+    return render_template('index.html', prediction_text='LAPTOP VALUE should be : Rs.')
     
     
 
