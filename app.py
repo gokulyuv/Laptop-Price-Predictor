@@ -28,7 +28,7 @@ def predict():
     #output = round(prediction[0], 2)
     
  
-    return render_template('index.html', prediction_text='LAPTOP VALUE should be : Rs. {}'.format(final_features.type))
+    return render_template('index.html', prediction_text='LAPTOP VALUE should be : Rs. {}'.format(final_features.shape))
     
     
 
