@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>RESULT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .result{
+    height:500px;
+  }
+  footer {
+	background-color: black;
+	height: 400px;
+	background-image: url(img/footer-bg.jpg);
+	background-size: 100%;
+	background-position: 10% 50%;
+}
+
+.social-footer {
+	width: 33%;
+	margin: auto;
+	height: 40%;
+}
+
+.social-footer:hover {
+	background-color: black;
+	opacity: .5;
+}
+
+.centr {
+	width: 33%;
+	margin: auto;
+	padding-top: 60px;
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 1.1em;
+	text-align: center;
+	display: block;
+	padding-top: 15px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  width: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+#home{
+	background-color: #202020
+}
+#actv{
+	font-weight: 600;
+	font-size: 1.25em;
+	
+}
+#pass{
+	font-size: 1.25em;
+	font-weight: 300;
+}
+</style>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-black navbar-dark" style="background-color:#000000">
+  <a class="navbar-brand" href="#">
+    <img src="img/pplogo-dark.png" alt="logo" style="width:45px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item"  style="width:100px; padding:0 auto;">
+      <a class="nav-link text-center" href="/"><span id="pass">Home</span></a>
+    </li>
+    <li class="nav-item active" style="width:100px; padding:0 auto;">
+      <a class="nav-link text-center" href="/predict"><span id="actv">Result</span></a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+<div class="result"><h1 style="text-align: center; padding-top: 100px;">{{ prediction_text }}</h1></div>
+
+
+
+
+
+
+<footer> <a target="_blank"
+  href="https://www.linkedin.com/in/gokul-krishnan-780b16172/?trk=public_profile_browsemap_mini-profile_title&originalSubdomain=in"><div
+    class="social-footer">
+    <div class="centr">
+      <p style="text-align: center;">
+        <img src="img/linkedin.jpg" style="text-align: center;"
+          alt="linkedin" height="55" width="55">
+      </p>
+    </div>
+  </div></a>
+<p style="text-align: center; padding-top: 60px;">
+  <img class="rounded-circle" id="linkimage" src="img/pplogo-light.jpg"
+    width="60px">
+</p>
+<span class="copyright">Price Predictor - Made with &hearts; in
+  India</span> </footer>
+<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
