@@ -24,11 +24,11 @@ def predict():
     '''
     int_features = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
-    prediction = model.predict(final_features)
+    #prediction = model.predict(final_features)
     #output = round(prediction[0], 2)
     
  
-    return render_template('index.html', prediction_text='LAPTOP VALUE should be : Rs. {}'.format(prediction))
+    return render_template('index.html', prediction_text='LAPTOP VALUE should be : Rs. {}'.format(final_features.shape))
     
     
 
