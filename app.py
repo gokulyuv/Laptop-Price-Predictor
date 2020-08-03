@@ -24,6 +24,7 @@ def predict():
     '''
     int_features = [int(x) for x in request.form.values()]
     final_features = np.array(int_features)
+    final_features=np.reshape(final_features,(1,-1))
     #prediction = model.predict(final_features)
     #output = round(prediction[0], 2)
     
